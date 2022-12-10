@@ -10,8 +10,8 @@ if ($page == "dashboard") {
     include "Views/balita/page_tambahbalita.php";
 } elseif ($page == "detailbuku") {
     include "Views/buku/page_detailbuku.php";
-} elseif ($page == "editbuku") {
-    include "Views/buku/page_editbuku.php";
+} elseif ($page == "editbalita") {
+    include "Views/balita/page_editbalita.php";
 } elseif ($page == "editcover") {
     include "Views/buku/page_editcover.php";
 } elseif ($page == "pinjaman") {

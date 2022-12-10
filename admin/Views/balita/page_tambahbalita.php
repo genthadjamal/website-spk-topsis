@@ -10,13 +10,13 @@
     <form action="function/func_balita.php" method="POST" enctype="multipart/form-data">
         <div class="card-body">
             <div class="form-group row mb-3">
-                <label for="namabalita" class="col-sm-2 col-form-label">Nama Balita</label>
+                <label for="nama_balita" class="col-sm-2 col-form-label">Nama Balita</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" name="nama_balita" placeholder="" required>
                 </div>
             </div>
             <div class="form-group row mb-3">
-                <label for="alamatbalita" class="col-sm-2 col-form-label">Alamat Balita</label>
+                <label for="alamat_balita" class="col-sm-2 col-form-label">Alamat Balita</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" name="alamat_balita" placeholder="" required>
                 </div>

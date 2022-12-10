@@ -49,8 +49,8 @@
                             <td>
                                 <a class="btn btn-info" href="index.php?page=detailbuku&id_buku=<?= $balita['id_balita']; ?>"><i class="bi bi-eye-fill"></i></a>
                                 <a class="btn btn-success" href="index.php?page=editcover&id_buku=<?= $balita['id_balita']; ?>"><i class="bi bi-image-fill"></i></a>
-                                <a class="btn btn-warning" href="index.php?page=editbuku&id_buku=<?= $balita['id_balita']; ?>"><i class="bi bi-pencil-fill"></i></a>
-                                <a class="btn btn-danger flash-hapus" href="function/hapus_buku.php?id_buku=<?= $balita['id_balita']; ?>"><i class="bi bi-trash"></i></a>
+                                <a class="btn btn-warning" href="index.php?page=editbalita&id_balita=<?= $balita['id_balita']; ?>"><i class="bi bi-pencil-fill"></i></a>
+                                <a class="btn btn-danger flash-hapus" href="function/hapus_balita.php?id_balita=<?= $balita['id_balita']; ?>"><i class="bi bi-trash"></i></a>
                             </td>
 
                         </tr>
