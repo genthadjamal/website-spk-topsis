@@ -2,7 +2,7 @@
 include('function.php');
 
 if (isset($_GET['id_balita'])) {
-    $id_admin = $_GET['id_balita'];
+    $id_balita = $_GET['id_balita'];
 
     $sql_delete = "DELETE FROM tbl_balita WHERE id_balita = '$id_balita' ";
     $cek = mysqli_query($connect, $sql_delete);

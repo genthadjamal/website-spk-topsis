@@ -9,7 +9,7 @@ $year = date('Y');
 
 // PROSES TAMBAH DATA PADA TABLE produk
 if (isset($_POST['tambahdatabalita'])) {
-    $id_balita = $year . rand();
+    $id_balita = rand();
     $nama_balita = mysqli_real_escape_string($connect, $_POST['nama_balita']);
     $alamat_balita = mysqli_real_escape_string($connect, $_POST['alamat_balita']);
     $umur = mysqli_real_escape_string($connect, $_POST['umur']);
