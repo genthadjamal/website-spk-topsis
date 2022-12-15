@@ -14,8 +14,8 @@ if ($page == "dashboard") {
     include "Views/balita/page_editbalita.php";
 } elseif ($page == "editcover") {
     include "Views/buku/page_editcover.php";
-} elseif ($page == "pinjaman") {
-    include "Views/page_peminjaman.php";
+} elseif ($page == "zscore") {
+    include "Views/page_zscore.php";
 } elseif ($page == "pinjamankonfirmasi") {
     include "Views/page_sudahkonfirmasi.php";
 } elseif ($page == "bukudiambil") {

@@ -26,6 +26,7 @@
                         <th>NO</th>
                         <th>Nama Balita</th>
                         <th>Alamat Balita</th>
+                        <th>Jenis Kelamin</th>
                         <th>Umur</th>
                         <th>Tinggi</th>
                         <th>Berat</th>
@@ -43,6 +44,7 @@
                             <td> <?= $no++ ?></td>
                             <td> <?= $balita['nama_balita'] ?></td>
                             <td> <?= $balita['alamat_balita'] ?></td>
+                            <td><?= $balita['jenis_kelamin'] ?></td>
                             <td> <?= $balita['umur'] ?></td>
                             <td><?= $balita['tinggi']; ?></td>
                             <td><?= $balita['berat']; ?></td>

@@ -12,6 +12,7 @@ if (isset($_POST['tambahdatabalita'])) {
     $id_balita = rand();
     $nama_balita = mysqli_real_escape_string($connect, $_POST['nama_balita']);
     $alamat_balita = mysqli_real_escape_string($connect, $_POST['alamat_balita']);
+    $jenis_kelamin = mysqli_real_escape_string($connect, $_POST['jenis_kelamin']);
     $umur = mysqli_real_escape_string($connect, $_POST['umur']);
     $tinggi = mysqli_real_escape_string($connect, $_POST['tinggi']);
     $berat = mysqli_real_escape_string($connect, $_POST['berat']);
@@ -25,8 +26,8 @@ if (isset($_POST['tambahdatabalita'])) {
 
 
 
-    $sql_tambah = "INSERT INTO tbl_balita (id_balita, nama_balita, alamat_balita, umur, tinggi, berat, dibuat, diubah) 
-    VALUES ('$id_balita','$nama_balita', '$alamat_balita', '$umur','$tinggi','$berat', '$dibuat', '$diubah')";
+    $sql_tambah = "INSERT INTO tbl_balita (id_balita, nama_balita, alamat_balita, jenis_kelamin umur, tinggi, berat, dibuat, diubah) 
+    VALUES ('$id_balita','$nama_balita', '$alamat_balita','$jenis_kelamin', '$umur','$tinggi','$berat', '$dibuat', '$diubah')";
     mysqli_query($connect, $sql_tambah);
 
     // echo  "INSERT INTO tbl_balita (id_balita, nama_balita, alamat_balita, umur, tinggi, berat, dibuat, diubah) 
@@ -69,13 +70,14 @@ if (isset($_POST['editdatabalita'])) {
     $id_balita = $_POST['id_balita'];
     $nama_balita = filter_var($_POST['nama_balita'], FILTER_SANITIZE_STRING);
     $alamat_balita = filter_var($_POST['alamat_balita'], FILTER_SANITIZE_STRING);
+    $jenis_kelamin = filter_var($_POST['jenis_kelamin'], FILTER_SANITIZE_STRING);
     $umur = filter_var($_POST['umur'], FILTER_SANITIZE_STRING);
     $tinggi = filter_var($_POST['tinggi'], FILTER_SANITIZE_STRING);
     $berat = filter_var($_POST['berat'], FILTER_SANITIZE_STRING);
 
     $diubah = $datehis;
 
-    $sql_edit = "UPDATE tbl_balita SET nama_balita = '$nama_balita', alamat_balita = '$alamat_balita', umur='$umur', tinggi = '$tinggi',berat = '$berat', diubah = '$diubah'
+    $sql_edit = "UPDATE tbl_balita SET nama_balita = '$nama_balita', alamat_balita = '$alamat_balita',jenis_kelamin = '$jenis_kelamin', umur='$umur', tinggi = '$tinggi',berat = '$berat', diubah = '$diubah'
                                     WHERE id_balita = '$id_balita' ";
     mysqli_query($connect, $sql_edit);
 

@@ -44,6 +44,13 @@
                     </div>
                 </div>
                 <div class="form-group row mb-3">
+                    <!-- jenis kelamin -->
+                    <label for="jenis_kelamin" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="jenis_kelamin" value="<?php echo $balita['jenis_kelamin']; ?>" required>
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
                     <!-- Penerbit BUku -->
                     <label for="umur" class="col-sm-2 col-form-label">Umur</label>
                     <div class="col-sm-10">
