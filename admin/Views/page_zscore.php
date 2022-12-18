@@ -248,10 +248,369 @@
                                         $zscore = ($balita['berat'] - $median) / (12.1 - $median);
                                         echo "<td>$zscore </td>";
                                     }
+                                } else if ($balita['umur'] == 21) {
+                                    $median = 10.9;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 9.6);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (12.3 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 22) {
+                                    $median = 11.1;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 9.8);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (12.5 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 23) {
+                                    $median = 11.3;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 10.0);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (12.8 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 24) {
+                                    $median = 11.5;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 10.2);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (13.0 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 25) {
+                                    $median = 11.7;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 10.3);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (13.3 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 26) {
+                                    $median = 11.9;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 10.5);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (13.5 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 27) {
+                                    $median = 12.1;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 10.7);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (13.7 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 28) {
+                                    $median = 12.3;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 10.9);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (14.0 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 29) {
+                                    $median = 12.5;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 11.1);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (14.2 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 30) {
+                                    $median = 12.7;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 11.2);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (14.4 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 31) {
+                                    $median = 12.9;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 11.4);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (14.7 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 32) {
+                                    $median = 13.1;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 11.6);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (14.9 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 33) {
+                                    $median = 13.3;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 11.7);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (15.1 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 34) {
+                                    $median = 13.5;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 11.9);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (15.4 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 35) {
+                                    $median = 13.7;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 12.0);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (15.6 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 36) {
+                                    $median = 13.9;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 12.2);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (15.8 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 37) {
+                                    $median = 14.0;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 12.4);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (16.0 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 38) {
+                                    $median = 14.2;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 12.5);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (16.3 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 39) {
+                                    $median = 14.4;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 12.7);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (16.5 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 40) {
+                                    $median = 14.6;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 12.8);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (16.7 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 41) {
+                                    $median = 14.8;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 13.0);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (16.9 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 42) {
+                                    $median = 15.0;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 13.1);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (17.2 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 43) {
+                                    $median = 15.2;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 13.3);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (17.4 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 44) {
+                                    $median = 15.3;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 13.4);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (17.6 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 45) {
+                                    $median = 15.5;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 13.6);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (17.8 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 46) {
+                                    $median = 15.7;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 13.7);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (18.1 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 47) {
+                                    $median = 15.9;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 13.9);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (18.3 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 48) {
+                                    $median = 16.1;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 14.0);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (18.5 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 49) {
+                                    $median = 16.3;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 14.2);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (18.8 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 50) {
+                                    $median = 16.4;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 14.3);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (19.0 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 51) {
+                                    $median = 16.6;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 14.5);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (19.2 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 52) {
+                                    $median = 16.8;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 14.6);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (19.4 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 53) {
+                                    $median = 17.0;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 14.8);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (19.7 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 54) {
+                                    $median = 17.2;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 14.9);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (19.9 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 55) {
+                                    $median = 17.3;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 15.1);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (20.1 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 56) {
+                                    $median = 17.5;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 15.2);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (20.3 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 57) {
+                                    $median = 17.7;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 15.3);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (20.6 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 58) {
+                                    $median = 17.9;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 15.5);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (20.8 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 59) {
+                                    $median = 18.0;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 15.6);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (21.0 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['umur'] == 60) {
+                                    $median = 18.2;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 15.8);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (21.2 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
                                 }
+                                // akhir perhitungan zscore bb/u perempuan
 
-
-                                echo "<td>Ini Perempuan</td>";
                             } else if ($balita['jenis_kelamin'] == 'Laki-laki') {
                                 if ($balita['umur'] == 0) {
                                     $median = 3.3;
@@ -807,10 +1166,314 @@
                                 echo "<td>jenis kelamin tidak ditemukan</td>";
                             }
                             ?>
+                            <!-- pengkategorian status gizi -->
+                            <?php
+                            if ($zscore < (-3)) {
+                                echo "<td>Berat Badan Sangat Kurang</td>";
+                            } elseif ((-3) <= $zscore && $zscore < (-2)) {
+                                echo "<td>Berat Badan Kurang</td>";
+                            } elseif ((-2) <= $zscore && $zscore < 1) {
+                                echo "<td>Berat Badan Normal</td>";
+                            } else if ($zscore > 1) {
+                                echo "<td>Risiko Berat Badan Lebih</td>";
+                            } else {
+                            }
+                            ?>
 
+                            <!-- Tinggi Badan atau Panjang Badan Berdasarkan Umur -->
+                            <?php
+                            if ($balita['jenis_kelamin'] == 'Laki-laki') {
+                                if ($balita['umur'] == 0) {
+                                    $median = 49.9;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 48.0);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (51.8 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 1) {
+                                    $median = 54.7;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 52.8);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (56.7 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 2) {
+                                    $median = 58.4;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 56.4);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (60.4 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 3) {
+                                    $median = 61.4;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 59.4);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (63.5 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 4) {
+                                    $median = 63.9;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 61.8);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (66.0 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 5) {
+                                    $median = 65.9;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 63.8);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (68.0 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 6) {
+                                    $median = 67.6;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 65.5);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (69.8 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 7) {
+                                    $median = 69.2;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 67.0);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (71.3 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 8) {
+                                    $median = 70.6;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 68.4);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (72.8 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 9) {
+                                    $median = 72.0;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 69.7);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (74.2 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 10) {
+                                    $median = 73.3;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 71.0);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (75.6 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 11) {
+                                    $median = 74.5;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 72.2);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (76.9 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 12) {
+                                    $median = 75.7;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 73.4);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (78.1 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 13) {
+                                    $median = 76.9;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 74.5);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (79.3 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 14) {
+                                    $median = 78.0;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 75.6);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (80.5 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 15) {
+                                    $median = 79.1;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 76.6);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (81.7 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 16) {
+                                    $median = 80.2;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 77.6);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (82.8 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 17) {
+                                    $median = 81.2;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 78.6);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (83.9 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 18) {
+                                    $median = 82.3;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 79.6);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (85.0 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 19) {
+                                    $median = 83.2;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 80.5);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (86.0 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 20) {
+                                    $median = 84.2;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 81.4);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (87.0 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 21) {
+                                    $median = 85.1;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 82.3);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (88.0 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 22) {
+                                    $median = 86.0;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 83.1);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (89.0 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 23) {
+                                    $median = 86.9;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 83.9);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (89.9 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 24) {
+                                    $median = 87.8;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 84.8);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (90.9 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                    // 24 salah satu
+                                } else if ($balita['umur'] == 25) {
+                                    $median = 88.0;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 84.9);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (91.1 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                } else if ($balita['umur'] == 26) {
+                                    $median = 88.8;
+                                    if ($balita['tinggi'] < $median) {
+                                        $zscoretb = ($balita['tinggi'] - $median) / ($median - 52.8);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    } else {
+                                        $zscoretb = ($balita['tinggi'] - $median) / (56.7 - $median);
+                                        echo "<td><?= $zscoretb; ?></td>";
+                                    }
+                                }
+                                // ini nanti minta marina
+                            }
+                            ?>
 
+                            <?php
+                            if ($balita['jenis_kelamin'] == 'Laki-laki') {
+                                if ($balita['tinggi'] == 45.0) {
+                                    $median = 2.4;
+                                    if ($balita['berat'] < $median) {
+                                        $zbbtb = ($balita['berat'] - $median) / ($median - 2.2);
+                                        echo "<td><?= $zbbtb; ?></td>";
+                                    } else {
+                                        $zbbtb = ($balita['berat'] - $median) / (2.7 - $median);
+                                        echo "<td><?= $zbbtb; ?></td>";
+                                    }
+                                } else if ($balita['tinggi'] == 45.5) {
+                                    $median = 2.5;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 2.3);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (2.8 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['tinggi'] == 46.0) {
+                                    $median = 2.6;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 2.4);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (2.9 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                } else if ($balita['tinggi'] == 46.5) {
+                                    $median = 2.7;
+                                    if ($balita['berat'] < $median) {
+                                        $zscore = ($balita['berat'] - $median) / ($median - 2.5);
+                                        echo "<td> $zscore </td>";
+                                    } else {
+                                        $zscore = ($balita['berat'] - $median) / (3.0 - $median);
+                                        echo "<td>$zscore </td>";
+                                    }
+                                }
+                            }
+                            ?>
 
-                            <td> <?= $peminjaman['judul_buku'] ?></td>
                             <td> <?= $peminjaman['nama_peminjam'] ?></td>
                             <td> <?= $peminjaman['id_anggota'] ?></td>
                             <td> <?= $peminjaman['tanggal_pinjam'] ?></td>
