@@ -41,57 +41,29 @@
                 <thead>
                     <tr>
                         <th>NO</th>
-                        <th>Invoice</th>
-                        <th>Judul Buku</th>
-                        <th>Nama Peminjam</th>
-                        <th>No Identitas</th>
-                        <th>Tanggal Pinjam</th>
-                        <th>Tanggal Kembali</th>
-                        <th>Status Peminjaman</th>
-                        <th>Status Buku</th>
-                        <th>Aksi</th>
+                        <th>Nama Balita</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Kategori BB/U</th>
+                        <th>Kategori TB/U</th>
+                        <th>Kategori BB/TB</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                    $data = mysqli_query($connect, "SELECT * FROM tbl_peminjaman WHERE status_peminjaman = 'Sudah Dikonfirmasi' AND status_buku = 'Belum Diambil'");
+                    $data = mysqli_query($connect, "SELECT * FROM tbl_balita");
                     $no = 1;
-                    while ($peminjaman = mysqli_fetch_array($data)) {
+                    while ($balita = mysqli_fetch_array($data)) {
                     ?>
                         <tr>
                             <td> <?= $no++ ?></td>
-                            <td> <?= $peminjaman['invoice'] ?></td>
-                            <td> <?= $peminjaman['judul_buku'] ?></td>
-                            <td> <?= $peminjaman['nama_peminjam'] ?></td>
+                            <td> <?= $balita['nama_balita'] ?></td>
+                            <td> <?= $balita['jenis_kelamin'] ?></td>
+                            <?php
+                            include_once('bb_u.php');
+                            bbu();
+                            ?>
                             <td> <?= $peminjaman['id_anggota'] ?></td>
                             <td> <?= $peminjaman['tanggal_pinjam'] ?></td>
-                            <td> <?= $peminjaman['tanggal_kembali'] ?></td>
-                            <td>
-
-                                <center>
-                                    <?php if ($peminjaman['status_peminjaman'] == 'Belum Dikonfirmasi') { ?>
-                                        <p class="text-light bg-warning">Belum Konfirmasi</p>
-                                    <?php } else { ?>
-                                        <p class="text-light bg-success">Sudah Dikonfirmasi</p>
-                                    <?php } ?>
-                                </center>
-                            </td>
-                            <td>
-                                <center>
-                                    <?php if ($peminjaman['status_buku'] == 'Belum Diambil') { ?>
-                                        <p class="text-light bg-warning">Belum diambil</p>
-                                    <?php } elseif ($peminjaman['status_buku'] == 'Sudah Diambil') { ?>
-                                        <p class="text-light bg-success">Sudah Diambil</p>
-                                    <?php } elseif ($peminjaman['status_buku'] == 'Belum Kembali') { ?>
-                                        <p class="text-light bg-danger">Belum Kembali</p>
-                                    <?php } ?>
-                                </center>
-                            </td>
-                            <td>
-                                <a class="btn btn-warning" href="index.php?page=detailpinjaman&id_peminjam=<?= $peminjaman['id_peminjam']; ?>"><i class="bi bi-pencil-fill"></i></a>
-                                <a href="function/hapus_peminjaman.php?id_peminjam=<?= $peminjaman['id_peminjam']; ?>" class="btn btn-danger flash-hapus"><i class="bi bi-trash"></i></a>
-                            </td>
-
                         </tr>
 
                         <!-- MODAL EDIT DATA -->

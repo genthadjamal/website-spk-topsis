@@ -2,7 +2,7 @@
 define('DB_SERVER', 'localhost');             // HOST SERVER
 define('DB_USERID', 'root');                  // USER ID
 define('DB_PASSWORD', '');                // PASSWORD
-define('DB_NAME', 'db_perpustakaan');     // NAMA DATABASE
+define('DB_NAME', 'spk_topsis');     // NAMA DATABASE
 
 $connect = mysqli_connect(DB_SERVER, DB_USERID, DB_PASSWORD, DB_NAME) or die("Database tidak terkoneksi");
 
@@ -12,6 +12,10 @@ function login()
     if (empty($_SESSION['username'])) {
         header('location:login.php');
     }
+}
+
+function bbu()
+{
 }
 
 function getRating($id_buku, $con)

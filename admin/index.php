@@ -98,13 +98,13 @@ date_default_timezone_set('Asia/Jakarta'); // set waktu zona
                     <i class="fas fa-fw fa-shopping-cart"></i>
                     <span>Hasil Z-Score</span>
                 </a>
-                <a class="nav-link" href="index.php?page=pinjamankonfirmasi">
+                <a class="nav-link" href="index.php?page=datamatriks">
                     <i class="fas fa-fw fa-shopping-cart"></i>
-                    <span> Data Pinjaman Sudah Konfirmasi</span>
+                    <span> Data Matriks</span>
                 </a>
-                <a class="nav-link" href="index.php?page=bukudiambil">
+                <a class="nav-link" href="index.php?page=datamtk">
                     <i class="fas fa-fw fa-box"></i>
-                    <span>Buku Diambil</span>
+                    <span>Buku mtk</span>
                 </a>
                 <a class="nav-link" href="index.php?page=bukubelumkembali">
                     <i class="fas fa-fw fa-box"></i>

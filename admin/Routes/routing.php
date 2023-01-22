@@ -8,18 +8,16 @@ if ($page == "dashboard") {
     include "Views/page_balita.php";
 } elseif ($page == "tambahbalita") {
     include "Views/balita/page_tambahbalita.php";
-} elseif ($page == "detailbuku") {
-    include "Views/buku/page_detailbuku.php";
+} elseif ($page == "detailbalita") {
+    include "Views/buku/page_detailbalita.php";
 } elseif ($page == "editbalita") {
     include "Views/balita/page_editbalita.php";
-} elseif ($page == "editcover") {
-    include "Views/buku/page_editcover.php";
 } elseif ($page == "zscore") {
     include "Views/page_zscore.php";
-} elseif ($page == "pinjamankonfirmasi") {
-    include "Views/page_sudahkonfirmasi.php";
-} elseif ($page == "bukudiambil") {
-    include "Views/page_bukudiambil.php";
+} elseif ($page == "datamatriks") {
+    include "Views/page_datamatriks.php";
+} elseif ($page == "datamtk") {
+    include "Views/page_datamtk.php";
 } elseif ($page == "bukubelumkembali") {
     include "Views/page_bukubelumkembali.php";
 } elseif ($page == "detailpinjaman") {
