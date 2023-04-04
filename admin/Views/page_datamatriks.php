@@ -20,7 +20,6 @@
                         <th>Nama Balita</th>
                         <th>Jenis Kelamin</th>
                         <th>Kategori BB/U</th>
-                        <th>Bobot BB/U</th>
                         <th>Kategori TB/U</th>
                         <th>Kategori BB/TB</th>
                     </tr>
@@ -912,26 +911,6 @@
                             } else if ($zscore > 1) {
                                 $labelbbu = "Risiko Berat Badan Lebih";
                                 echo "<td>$labelbbu</td>";
-                            } else {
-                            }
-
-                            // bobot bb/u
-                            if ($zscore < (-3)) {
-                                $labelbbu = "Berat Badan Sangat Kurang";
-                                $bobot = 1;
-                                echo "<td>$bobot</td>";
-                            } elseif ((-3) <= $zscore && $zscore < (-2)) {
-                                $labelbbu = "Berat Badan Kurang";
-                                $bobot = 2;
-                                echo "<td>$bobot</td>";
-                            } elseif ((-2) <= $zscore && $zscore < 1) {
-                                $labelbbu = "Berat Badan Normal";
-                                $bobot = 3;
-                                echo "<td>$bobot</td>";
-                            } else if ($zscore > 1) {
-                                $labelbbu = "Risiko Berat Badan Lebih";
-                                $bobot = 4;
-                                echo "<td>$bobot</td>";
                             } else {
                             }
 
@@ -5305,102 +5284,17 @@
                             }
                             ?>
                         </tr>
+
                     <?php } ?>
 
                 </tbody>
+
             </table>
         </div>
     </div>
 </div>
 
 
-<div class="card shadow mb-4">
-    <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-info">List Balita</h6>
-    </div>
-
-    <div class="card-body">
-
-
-        <!-- <a href="cetak_produk.php"> <button class="btn btn-primary" type="button" href="#"> Cetak Data </button> </a> <br><br> -->
-
-        <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                    <tr>
-                    <tr>
-                        <th>NO</th>
-                        <th>Nama Balita</th>
-                        <th>Jenis Kelamin</th>
-                        <th>Bobot BB/U</th>
-                        <th>Bobot TB/U</th>
-                        <th>Bobot BB/TB</th>
-                    </tr>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    $data = mysqli_query($connect, "SELECT * FROM tbl_balita");
-                    $awal = 0;
-                    $no = $awal + 1;
-                    while ($balita = mysqli_fetch_array($data)) {
-                    ?>
-                        <tr>
-                            <td> <?= $no++ ?></td>
-                            <td> <?= $balita['nama_balita'] ?></td>
-                            <td><?= $balita['jenis_kelamin'] ?></td>
-                            <?php
-                            // bobot bb/u
-                            if ($labelbbu == "Berat Badan Sangat Kurang") {
-                                $bobot = 1;
-                                echo "<td>$bobot</td>";
-                            } elseif ($labelbbu == "Berat Badan Kurang") {
-                                $bobot = 2;
-                                echo "<td>$bobot</td>";
-                            } elseif ($labelbbu == "Berat Badan Normal") {
-                                $bobot = 3;
-                                echo "<td>$bobot</td>";
-                            } else if ($labelbbu == "Risiko Berat Badan Lebih") {
-                                $bobot = 4;
-                                echo "<td>$bobot</td>";
-                            } else {
-                            }
-
-                            // bobot bb/u
-                            // if ($zscore < (-3)) {
-                            //     $labelbbu = "Berat Badan Sangat Kurang";
-                            //     $bobot = 1;
-                            //     echo "<td>$bobot</td>";
-                            // } elseif ((-3) <= $zscore && $zscore < (-2)) {
-                            //     $labelbbu = "Berat Badan Kurang";
-                            //     $bobot = 2;
-                            //     echo "<td>$bobot</td>";
-                            // } elseif ((-2) <= $zscore && $zscore < 1) {
-                            //     $labelbbu = "Berat Badan Normal";
-                            //     $bobot = 3;
-                            //     echo "<td>$bobot</td>";
-                            // } else if ($zscore > 1) {
-                            //     $labelbbu = "Risiko Berat Badan Lebih";
-                            //     $bobot = 4;
-                            //     echo "<td>$bobot</td>";
-                            // } else {
-                            // }
-                            ?>
-                            <td></td>
-                            <td></td>
-
-
-                        </tr>
-
-
-
-                    <?php } ?>
-
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
 
 
 

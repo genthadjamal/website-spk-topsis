@@ -16,6 +16,10 @@ if ($page == "dashboard") {
     include "Views/page_zscore.php";
 } elseif ($page == "datamatriks") {
     include "Views/page_datamatriks.php";
+} elseif ($page == "databobot") {
+    include "Views/page_bobot.php";
+} elseif ($page == "dataternormalisasi") {
+    include "Views/normalisasi.php";
 } elseif ($page == "datamtk") {
     include "Views/page_datamtk.php";
 } elseif ($page == "bukubelumkembali") {

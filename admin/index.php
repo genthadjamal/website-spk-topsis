@@ -102,6 +102,14 @@ date_default_timezone_set('Asia/Jakarta'); // set waktu zona
                     <i class="fas fa-fw fa-shopping-cart"></i>
                     <span> Data Matriks</span>
                 </a>
+                <a class="nav-link" href="index.php?page=databobot">
+                    <i class="fas fa-fw fa-shopping-cart"></i>
+                    <span> Data Bobot</span>
+                </a>
+                <a class="nav-link" href="index.php?page=dataternormalisasi">
+                    <i class="fas fa-fw fa-shopping-cart"></i>
+                    <span> Data Ternormalisasi</span>
+                </a>
                 <a class="nav-link" href="index.php?page=datamtk">
                     <i class="fas fa-fw fa-box"></i>
                     <span>Buku mtk</span>

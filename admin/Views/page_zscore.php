@@ -6733,50 +6733,7 @@
 </div>
 
 
-<!-- MODAL TAMBAH pesanan -->
-<div class="modal fade" id="tambahpesanan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="fw-bolder modal-title" id="exampleModalLabel">Tambah Data pesanan</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="function/func_pesanan.php" method="POST" enctype="multipart/form-data">
-                    <div class="form-group col-md-12">
-                        <label for="">Kategori</label>
-                        <select class="form-control" name="kategori">
-                            <option value="" selected disabled>Pilih</option>
-                            <?php
-                            include 'function/function.php';
-                            $data = mysqli_query($connect, "SELECT * FROM tbl_produk");
-                            while ($produk = mysqli_fetch_array($data)) {
-                            ?>
-                                <option value="<?php echo $produk['nama_produk'] ?>"><?php echo $produk['kategori'] ?> - <?php echo $produk['nama_produk'] ?></option>
-                            <?php } ?>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-12">
-                        <label for="">Nama pesanan</label>
-                        <input type="text" class="form-control" name="nama_pesanan">
-                    </div>
-                    <div class="form-group col-md-12">
-                        <label for="">Harga pesanan</label>
-                        <input type="number" class="form-control" name="harga_pesanan">
-                    </div>
 
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <button type="submit" name="tambahdatapesanan" class="btn btn-info">Simpan</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END MODAL TAMBAH pesanan -->
 
 
 <!-- SCRIPT -->

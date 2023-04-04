@@ -1,5 +1,5 @@
 <!-- Page pesanan -->
-<h1 class="h3 mb-2 text-gray-800">Data Pinjaman </h1>
+<h1 class="h3 mb-2 text-gray-800">Data Matriks bobot </h1>
 <p class="mb-4"> Menampilkan Data Pinjaman yang ada pada website<a class="text-info" target="_blank" href="../index.php" target="_blank"> PERPUSTAKAAN KOTA Yogyakarta</a>.</p>
 
 <!-- ALERT FLASH MESSAGE -->
@@ -41,29 +41,20 @@
                 <thead>
                     <tr>
                         <th>NO</th>
-                        <th>Nama Balita</th>
-                        <th>Jenis Kelamin</th>
-                        <th>Kategori BB/U</th>
-                        <th>Kategori TB/U</th>
-                        <th>Kategori BB/TB</th>
+                        <th>Nama Kriteria</th>
+                        <th>Bobot</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                    $data = mysqli_query($connect, "SELECT * FROM tbl_balita");
+                    $data = mysqli_query($connect, "SELECT * FROM tbl_kriteria");
                     $no = 1;
                     while ($balita = mysqli_fetch_array($data)) {
                     ?>
                         <tr>
                             <td> <?= $no++ ?></td>
-                            <td> <?= $balita['nama_balita'] ?></td>
-                            <td> <?= $balita['jenis_kelamin'] ?></td>
-                            <?php
-                            include_once('bb_u.php');
-                            bbu();
-                            ?>
-                            <td> <?= $peminjaman['id_anggota'] ?></td>
-                            <td> <?= $peminjaman['tanggal_pinjam'] ?></td>
+                            <td><?php echo $balita[1] ?></td>
+                            <td><?php echo $balita[2] ?></td>
                         </tr>
 
                         <!-- MODAL EDIT DATA -->
