@@ -16,6 +16,12 @@
                 </div>
             </div>
             <div class="form-group row mb-3">
+                <label for="jk" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="jk" placeholder="" required>
+                </div>
+            </div>
+            <div class="form-group row mb-3">
                 <label for="alamat_balita" class="col-sm-2 col-form-label">Alamat Balita</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" name="alamat_balita" placeholder="" required>

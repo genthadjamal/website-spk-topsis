@@ -1,3 +1,4 @@
+<!-- normalisasi -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-info">List Balita</h6>
@@ -89,6 +90,7 @@
 
 </div>
 
+<!-- normalisasi terbobot -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-info">List Normalisasi terbobot</h6>
@@ -155,6 +157,7 @@
     </div>
 </div>
 
+<!-- nilai ideal positif negatif -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-info">Nilai Ideal Positif dan Nilai Ideal Negatif</h6>
@@ -366,6 +369,7 @@
                     $awal = 0;
                     $no = $awal + 1;
                     while ($balita = mysqli_fetch_array($data)) {
+                        $id_balita = $balita['id_balita'];
                     ?>
                         <tr>
                             <td><?= $no++; ?></td>
@@ -402,7 +406,7 @@
             $text = mysqli_query($connect, "SELECT *  FROM `tbl_balita` WHERE preferensi = (SELECT MIN(preferensi) FROM `tbl_balita`)");
             // $preferensi = $query['id_balita'];
             while ($balita = mysqli_fetch_array($text)) {
-                echo "<p>Dari Hasil Perhitungan Sistem Pendukung Keputusan dapat disimpulkan bahwa <b>" . $balita['nama_balita'] . "</b> dengan " . $balita['berat'] . ", " . $balita['tinggi'] . ", " . $balita['umur'] . ", mendapat prioritas untuk penanganan gejala stunting dan nantinya bisa ditangani lebih lanjut oleh seorang yang alhli dibidangnya</p>";
+                echo "<p>Dari Hasil Perhitungan Sistem Pendukung Keputusan dapat disimpulkan bahwa Balita atas Nama <b>" . $balita['nama_balita'] . "</b> dengan Berat " . $balita['berat'] . " Kg ,Tinggi " . $balita['tinggi'] . " cm, dan Umur " . $balita['umur'] . " Bulan, mendapat prioritas untuk penanganan gejala stunting dan nantinya bisa ditangani lebih lanjut oleh seorang yang alhli dibidangnya</p>";
             }
             ?>
 

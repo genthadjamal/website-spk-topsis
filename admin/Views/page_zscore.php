@@ -6732,6 +6732,110 @@
     </div>
 </div>
 
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-info">Tampilan data perhitungan matriks</h6>
+    </div>
+
+    <div class="card-body">
+        <div class="table-responsive">
+            <h5>Data Balita</h5>
+
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>Nama Balita</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Kategori BB/U</th>
+                        <th>Kategori TB/U</th>
+                        <th>Kategori BB/TB</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    $data = mysqli_query($connect, "SELECT * FROM tbl_balita");
+                    $no = 1;
+                    while ($balita = mysqli_fetch_array($data)) {
+                    ?>
+                        <tr>
+                            <td> <?= $no++ ?></td>
+                            <td> <?= $balita['nama_balita'] ?></td>
+                            <td> <?= $balita['jenis_kelamin'] ?></td>
+                            <?php
+                            include 'bb_u.php';
+                            // pengkondisian bb/u
+                            if ($zscore < (-3)) {
+                                $labelbbu = "Berat Badan Sangat Kurang";
+                                echo "<td>$labelbbu</td>";
+                            } elseif ((-3) <= $zscore && $zscore < (-2)) {
+                                $labelbbu = "Berat Badan Kurang";
+                                echo "<td>$labelbbu</td>";
+                            } elseif ((-2) <= $zscore && $zscore < 1) {
+                                $labelbbu = "Berat Badan Normal";
+                                echo "<td>$labelbbu</td>";
+                            } else if ($zscore > 1) {
+                                $labelbbu = "Risiko Berat Badan Lebih";
+                                echo "<td>$labelbbu</td>";
+                            } else {
+                            }
+
+
+
+                            ?>
+
+                            <?php
+                            include 'tb_u.php';
+                            ?>
+                            <!-- pengkondisian tb/u -->
+                            <?php
+                            if ($zscoretb < (-3)) {
+                                echo "<td>Sangat Pendek</td>";
+                            } else if ((-3) <= $zscoretb && $zscoretb < (-2)) {
+                                echo "<td>Pendek</td>";
+                            } else if ((-2) <= $zscoretb && $zscoretb < 3) {
+                                echo "<td>Normal</td>";
+                            } else if ($zscore > 3) {
+                                echo "<td>Tinggi</td>";
+                            } else {
+                                echo "<td>tidak ada kategori</td>";
+                            }
+                            ?>
+                            <!-- awal bb/tb cowo -->
+                            <?php
+                            include 'bb_tb.php';
+                            // akhir bb/tb cowo n cewe
+                            ?>
+
+                            <!-- pengkondisian bb/tb -->
+                            <?php
+                            if ($zbbtb < (-3)) {
+                                echo "<td>Gizi Buruk</td>";
+                            } else if ((-3) <= $zbbtb && $zbbtb < (-2)) {
+                                echo "<td>Gizi Kurang</td>";
+                            } else if ((-2) <= $zbbtb && $zbbtb < 1) {
+                                echo "<td>Gizi Baik (Normal)</td>";
+                            } else if ($zbbtb > 1 && $zbbtb <= 2) {
+                                echo "<td>Berisiko Gizi Lebih</td>";
+                            } else if ($zbbtb > 2 && $zbbtb <= 3) {
+                                echo "<td>Gizi Lebih</td>";
+                            } else if ($zbbtb > 3) {
+                                echo "<td>Obesitas</td>";
+                            } else {
+                                echo "<td>tidak ada kategori</td>";
+                            }
+                            ?>
+                        </tr>
+
+                    <?php } ?>
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+
 
 
 

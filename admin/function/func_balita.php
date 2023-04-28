@@ -12,7 +12,7 @@ if (isset($_POST['tambahdatabalita'])) {
     $id_balita = rand();
     $nama_balita = mysqli_real_escape_string($connect, $_POST['nama_balita']);
     $alamat_balita = mysqli_real_escape_string($connect, $_POST['alamat_balita']);
-    $jenis_kelamin = mysqli_real_escape_string($connect, $_POST['jenis_kelamin']);
+    $jenis_kelamin = mysqli_real_escape_string($connect, $_POST['jk']);
     $umur = mysqli_real_escape_string($connect, $_POST['umur']);
     $tinggi = mysqli_real_escape_string($connect, $_POST['tinggi']);
     $berat = mysqli_real_escape_string($connect, $_POST['berat']);
@@ -26,12 +26,12 @@ if (isset($_POST['tambahdatabalita'])) {
 
 
 
-    $sql_tambah = "INSERT INTO tbl_balita (id_balita, nama_balita, alamat_balita, jenis_kelamin umur, tinggi, berat, dibuat, diubah) 
+    $sql_tambah = "INSERT INTO tbl_balita (id_balita, nama_balita, alamat_balita, jenis_kelamin, umur, tinggi, berat, dibuat, diubah) 
     VALUES ('$id_balita','$nama_balita', '$alamat_balita','$jenis_kelamin', '$umur','$tinggi','$berat', '$dibuat', '$diubah')";
     mysqli_query($connect, $sql_tambah);
 
-    // echo  "INSERT INTO tbl_balita (id_balita, nama_balita, alamat_balita, umur, tinggi, berat, dibuat, diubah) 
-    // VALUES ('$id_balita','$nama_balita', '$alamat_balita', '$umur','$tinggi','$berat', '$dibuat', '$diubah')";
+    // echo  "INSERT INTO tbl_balita (id_balita, nama_balita, alamat_balita,jenis_kelamin, umur, tinggi, berat, dibuat, diubah) 
+    // VALUES ('$id_balita','$nama_balita', '$alamat_balita','$jenis_kelamin', '$umur','$tinggi','$berat', '$dibuat', '$diubah')";
 
     session_start();
     $_SESSION['flash-y'] = '<strong> Berhasil..!</strong> Berhasil menambahkan data...';

@@ -13,7 +13,6 @@
                 <thead>
                     <tr>
                         <th>NO</th>
-                        <th>id balita</th>
                         <th>Nama Balita</th>
                         <th>Bobot BB/U</th>
                         <th>Bobot TB/U</th>
@@ -30,7 +29,6 @@
                     ?>
                         <tr>
                             <td> <?= $no++ ?></td>
-                            <td><?= $balita['id_balita']; ?></td>
                             <td> <?= $balita['nama_balita'] ?></td>
                             <?php
                             include 'bb_u.php';

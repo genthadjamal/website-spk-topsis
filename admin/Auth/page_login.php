@@ -12,7 +12,7 @@
     <!-- BOOSTRAP CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <title>PERPUSTAKAAN - Login</title>
+    <title>SPK BALITA STUNTING - Login</title>
 </head>
 
 <body style="background-color: #e6f2f1">

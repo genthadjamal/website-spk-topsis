@@ -106,13 +106,7 @@
                     <input type="text" class="form-control" name="diubah" value="<?php echo $buku['diubah']; ?>" readonly>
                 </div>
             </div>
-            <!-- <div class="form-group row mb-3">
-            <div class="col-sm-10 offset-md-2">
-                <a class="btn btn-secondary" href="javascript:history.back()">Kembali</a>
-            </div>
-        </div> -->
         </div>
-        <!-- END MODAL EDIT FOTO -->
     <?php } ?>
 </div>
 <!-- END MODAL TAMBAH DATA -->

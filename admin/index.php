@@ -110,18 +110,7 @@ date_default_timezone_set('Asia/Jakarta'); // set waktu zona
                     <i class="fas fa-fw fa-shopping-cart"></i>
                     <span> Data Ternormalisasi</span>
                 </a>
-                <a class="nav-link" href="index.php?page=datamtk">
-                    <i class="fas fa-fw fa-box"></i>
-                    <span>Buku mtk</span>
-                </a>
-                <a class="nav-link" href="index.php?page=bukubelumkembali">
-                    <i class="fas fa-fw fa-box"></i>
-                    <span>Buku Belum Kembali</span>
-                </a>
-                <a class="nav-link" href="index.php?page=dataanggota">
-                    <i class="fas fa-fw fa-user"></i>
-                    <span>Data Anggota</span>
-                </a>
+
                 <!-- <a class="nav-link" href="index.php?page=galeri">
                     <i class="fas fa-fw fa-image"></i>
                     <span> Data Galeri</span>
@@ -258,7 +247,7 @@ date_default_timezone_set('Asia/Jakarta'); // set waktu zona
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; <a class="text-info" href="#" target="_blank">tim magang diskominfosan </a>2022</span>
+                        <span>Copyright &copy; <a class="text-info" href="#" target="_blank">SPK - Gentha Muhamad Djamal </a>2023</span>
                     </div>
                 </div>
             </footer>
