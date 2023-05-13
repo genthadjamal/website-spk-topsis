@@ -20,7 +20,7 @@
         <!-- <a href="cetak_pesanan.php"> <button class="btn btn-primary" type="button" href="#"> Cetak Data </button> </a> <br><br> -->
 
         <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <table class="table table-bordered multi-table" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
                         <th>NO</th>
@@ -6741,7 +6741,7 @@
         <div class="table-responsive">
             <h5>Data Balita</h5>
 
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <table class="table table-bordered multi-table" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
                         <th>NO</th>
