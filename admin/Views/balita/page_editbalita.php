@@ -1,6 +1,6 @@
 <!-- Page PRODUK -->
-<h1 class="h3 mb-2 text-gray-800">Edit Produk</h1>
-<p class="mb-4"> Edit data Balita yang ada pada website<a target="_blank" href="../index.php" target="_blank">SISTEM PENDUKUNG KEPUTUSAN - PRIORITAS PENENTUAN BALITA STUNTING</a>.</p>
+<h1 class="h3 mb-2 text-gray-800">Edit Data Balita</h1>
+<p class="mb-4"> Edit data Balita yang ada pada website<a target="_blank" href="../index.php" target="_blank"> SISTEM PENDUKUNG KEPUTUSAN - PRIORITAS PENENTUAN BALITA STUNTING</a>.</p>
 
 <!-- DataTales Example -->
 <div class="card shadow mb-4">

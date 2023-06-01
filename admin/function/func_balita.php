@@ -65,7 +65,7 @@ if (isset($_POST['tambahdatabalita'])) {
 
 
 ///////////////////////////////////////
-// EDIT DATA produk
+// EDIT DATA balita
 if (isset($_POST['editdatabalita'])) {
     $id_balita = $_POST['id_balita'];
     $nama_balita = filter_var($_POST['nama_balita'], FILTER_SANITIZE_STRING);

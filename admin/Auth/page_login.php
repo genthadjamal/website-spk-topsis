@@ -44,6 +44,9 @@
                             <div class="d-grid gap-2 col-7 mx-auto">
                                 <button type="submit" name="login" class="btn btn-primary">Masuk</button>
                             </div>
+                            <div class="d-grid gap-2 col-7 mx-auto mt-2">
+                                <a href="page_register.php" class="btn btn-secondary mt-2">Daftar</a>
+                            </div>
                         </form>
                     </div>
                 </div>

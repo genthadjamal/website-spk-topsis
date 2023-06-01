@@ -94,22 +94,7 @@ date_default_timezone_set('Asia/Jakarta'); // set waktu zona
                     <i class="fas fa-fw fa-box"></i>
                     <span> Data Balita</span>
                 </a>
-                <a class="nav-link" href="index.php?page=zscore">
-                    <i class="fas fa-fw fa-shopping-cart"></i>
-                    <span>Hasil Z-Score</span>
-                </a>
-                <a class="nav-link" href="index.php?page=datamatriks">
-                    <i class="fas fa-fw fa-shopping-cart"></i>
-                    <span> Data Matriks</span>
-                </a>
-                <a class="nav-link" href="index.php?page=databobot">
-                    <i class="fas fa-fw fa-shopping-cart"></i>
-                    <span> Data Bobot</span>
-                </a>
-                <a class="nav-link" href="index.php?page=dataternormalisasi">
-                    <i class="fas fa-fw fa-shopping-cart"></i>
-                    <span> Data Ternormalisasi</span>
-                </a>
+
 
                 <!-- <a class="nav-link" href="index.php?page=galeri">
                     <i class="fas fa-fw fa-image"></i>

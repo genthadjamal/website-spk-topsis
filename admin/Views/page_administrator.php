@@ -6,7 +6,7 @@
 
 <!-- Page Heading -->
 <h1 class="h3 mb-2 text-gray-800">Data Administrator</h1>
-<p class="mb-4"> Menampilkan data akun yang ada pada website <a class="text-info" target="_blank" href="../index.php">PERPUSTAKAAN KOTA Yogyakarta</a>.</p>
+<p class="mb-4"> Menampilkan data akun yang ada pada website <a class="text-info" target="_blank" href="../index.php">SISTEM PENDUKUNG KEPUTUSAN</a>.</p>
 
 <!-- DataTales -->
 <div class="card shadow mb-4">
