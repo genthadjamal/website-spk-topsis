@@ -17,8 +17,20 @@
             </div>
             <div class="form-group row mb-3">
                 <label for="jk" class="col-sm-2 col-form-label">Jenis Kelamin</label>
-                <div class="col-sm-10">
+                <!-- <div class="col-sm-10">
                     <input type="text" class="form-control" name="jk" placeholder="" required>
+                </div> -->
+                <div class="form-check ml-3">
+                    <input class="form-check-input" type="radio" name="jk" value="Laki-laki">
+                    <label class="form-check-label">
+                        Laki-laki
+                    </label>
+                </div>
+                <div class="form-check ml-3">
+                    <input class="form-check-input" type="radio" name="jk" value="Perempuan">
+                    <label class="form-check-label">
+                        Perempuan
+                    </label>
                 </div>
             </div>
             <div class="form-group row mb-3">
@@ -40,7 +52,7 @@
                 </div>
             </div>
             <div class="form-group row mb-3">
-                <label for="berat" class="col-sm-2 col-form-label">Berat</label>
+                <label for="berat" class="col-sm-2 col-form-label">Berat Badan (kg)</label>
                 <div class="col-sm-10">
                     <input type="text" id="formFile" class="form-control" name="berat" placeholder="" required>
                 </div>

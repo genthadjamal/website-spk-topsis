@@ -47,23 +47,13 @@
                     ?>
                         <tr>
                             <td> <?= $no++ ?></td>
-                            <!-- <td> <//?= $akun['id_admin'] ?></td> -->
-                            <!-- <td> <//?= $akun['hak_akses'] ?></td> -->
                             <td> <?= $akun['nama_admin'] ?></td>
                             <td> <?= $akun['email'] ?></td>
                             <td> <?= $akun['username'] ?></td>
-                            <!-- <td> <//?= $akun['password'] ?></td> -->
                             <td> <?= $akun['dibuat'] ?></td>
                             <td> <?= $akun['diubah'] ?></td>
-                            <!-- <td>
-                            <img src="foto/<?php //echo $akun['foto'] 
-                                            ?>" width="100"><br>
-                            <center><a class="btn btn-warning btn-sm btn-block" data-toggle="modal" data-target="#editfoto<?php //echo $akun['id_admin']
-                                                                                                                            ?>" ><i class="bi bi-pencil"></i> edit</a></center>
-                        </td> -->
                             <td>
                                 <a class="btn btn-warning mb-1" data-toggle="modal" data-target="#editakun<?php echo $akun['id_admin'] ?>"><i class="bi bi-pencil-fill"></i></a>
-                                <!-- <a class="btn btn-warning" data-toggle="modal" data-target="#editpassword<//?php echo $akun['id_admin']?>" ><i class="bi bi-pencil"></i> Password</a> -->
                             </td>
                             <td>
                                 <a class="btn btn-danger flash-hapus" href="function/hapus_user.php?id_admin=<?= $akun['id_admin']; ?>"><i class="bi bi-trash"></i></a>

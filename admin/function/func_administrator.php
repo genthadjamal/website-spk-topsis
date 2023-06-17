@@ -113,11 +113,11 @@ if (isset($_POST['editdataakun'])) {
     $diubah = $date;
     $ditambah = $date;
 
-    $nama = mysqli_real_escape_string($connect, $_POST['nama']);
+    $nama = mysqli_real_escape_string($connect, $_POST['nama_admin']);
     $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
     $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
 
-    $sql_edit = "UPDATE tbl_admin SET nama = '$nama', email = '$email', username = '$username', diubah = '$diubah' WHERE id_admin = '$id_admin' ";
+    $sql_edit = "UPDATE tbl_admin SET nama_admin = '$nama', email = '$email', username = '$username', diubah = '$diubah' WHERE id_admin = '$id_admin' ";
     mysqli_query($connect, $sql_edit);
 
     $_SESSION['flash-y'] = '<strong> Sukses..!</strong> Data Berhasil diubah.';
